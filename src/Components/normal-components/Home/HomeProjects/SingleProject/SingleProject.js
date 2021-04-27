@@ -1,26 +1,59 @@
+import Button from "@material-ui/core/Button";
+import Card from "@material-ui/core/Card";
+import CardActionArea from "@material-ui/core/CardActionArea";
+import CardActions from "@material-ui/core/CardActions";
+import CardContent from "@material-ui/core/CardContent";
+import CardMedia from "@material-ui/core/CardMedia";
+import Typography from "@material-ui/core/Typography";
+import GitHubIcon from "@material-ui/icons/GitHub";
+import LiveTvIcon from "@material-ui/icons/LiveTv";
 import AOS from "aos";
 import React from "react";
 import { Col } from "react-bootstrap";
 import "./SingleProject.css";
+
 AOS.init();
+
 export default function SingleProject(props) {
-  const { img, name, link } = props.project;
+  const { img, name, github, live_site, description } = props.project;
   return (
     <Col
       md={4}
-      style={{ height: "400px" }}
-      className="mb-3 project"
+      className="my-4 project py-2"
       data-aos="fade-up"
       data-aos-duration="1200"
     >
-      <div className="project-overlay"></div>
-      <img src={img} alt="" className="w-100 h-100" />
-      <div className="project-info text-center text-light">
-        <h4>{name}</h4>
-        <a href={link} className="text-light">
-          Live Site Link
-        </a>
-      </div>
+      <Card className="w-100 h-100 shadow">
+        <CardActionArea>
+          <CardMedia
+            style={{ width: "100%", height: "250px" }}
+            image={img}
+            title="Contemplative Reptile"
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="h2">
+              {name}
+            </Typography>
+            <Typography component="p">{description}</Typography>
+          </CardContent>
+        </CardActionArea>
+        <CardActions className="d-flex justify-content-between">
+          <Button size="small">
+            <GitHubIcon />{" "}
+            <a href={github} className="px-2 text-warning">
+              {" "}
+              Github Link
+            </a>
+          </Button>
+          <Button size="small">
+            <LiveTvIcon />{" "}
+            <a href={live_site} className="px-2 text-warning">
+              {" "}
+              Live Site
+            </a>
+          </Button>
+        </CardActions>
+      </Card>
     </Col>
   );
 }

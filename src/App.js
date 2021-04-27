@@ -8,6 +8,7 @@ import education from "./fakeData/education";
 import experience from "./fakeData/experience";
 import PersonalInfo from "./fakeData/PersonalInfo";
 import profession from "./fakeData/profession";
+import reviews from "./fakeData/reviews";
 import skills from "./fakeData/skills";
 export const UserContext = createContext();
 function App() {
@@ -16,6 +17,7 @@ function App() {
   const [EducationInfo, setEducationInfo] = useState([]);
   const [ExperienceInfo, setExperienceInfo] = useState([]);
   const [Skills, setSkills] = useState([]);
+  const [Reviews, setReviews] = useState([]);
   //fetching personal info
   useEffect(() => {
     setPersonalInfo(PersonalInfo);
@@ -36,6 +38,10 @@ function App() {
   useEffect(() => {
     setSkills(skills);
   }, []);
+  //featching review info
+  useEffect(() => {
+    setReviews(reviews);
+  }, []);
   return (
     <div className="App">
       <UserContext.Provider
@@ -50,6 +56,8 @@ function App() {
           setExperienceInfo,
           Skills,
           setSkills,
+          Reviews,
+          setReviews,
         ]}
       >
         <Router>

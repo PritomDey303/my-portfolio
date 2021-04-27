@@ -1,0 +1,10 @@
+.contact-form input {
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #000;
+}
+.contact-form textarea {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #000;
+}

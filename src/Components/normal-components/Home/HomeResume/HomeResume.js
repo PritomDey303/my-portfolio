@@ -60,15 +60,19 @@ export default function HomeResume() {
               ))}
             </div>
           </Col>
-        </Row>
-        <h2 className="my-1">My Skills</h2>
-
-        <Row>
-          {Skills.map((skill) => (
-            <HomeSkills key={skill._id} skill={skill}></HomeSkills>
-          ))}
-        </Row>
+        </Row>{" "}
       </Container>
+      <div className="bg-grey py-5">
+        <Container>
+          <h2 className="my-1">My Skills</h2>
+
+          <Row>
+            {Skills.map((skill) => (
+              <HomeSkills key={skill._id} skill={skill}></HomeSkills>
+            ))}
+          </Row>
+        </Container>
+      </div>
     </div>
   );
 }

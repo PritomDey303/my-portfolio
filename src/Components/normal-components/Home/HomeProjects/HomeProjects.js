@@ -15,9 +15,9 @@ export default function HomeProjects() {
         );
   }, [tag]);
   console.log(filteredProjects);
-
+  const [isActive, setIsActive] = useState("All");
   return (
-    <div className="py-5 bg-grey">
+    <div className="py-5">
       <Container>
         <Row data-aos="fade-up" data-aos-duration="1500">
           <Col>
@@ -31,32 +31,52 @@ export default function HomeProjects() {
             </Col>
           </Col>
         </Row>
-        <Row className="my-4">
+        <Row className="my-4" data-aos="fade-up" data-aos-duration="1500">
           <Col className="d-flex justify-content-center">
             <button
-              className="btn btn-outline-warning mx-2"
-              onClick={() => setTag("all")}
+              className={`btn btn-outline-warning mx-2 ${
+                isActive === "All" ? "active" : ""
+              }`}
+              onClick={() => {
+                setTag("all");
+                setIsActive("All");
+              }}
             >
               All
             </button>
 
             <button
-              className="btn btn-outline-warning mx-2"
-              onClick={() => setTag("Web Design")}
+              className={`btn btn-outline-warning mx-2 ${
+                isActive === "Web Design" ? "active" : ""
+              }`}
+              onClick={() => {
+                setTag("Web Design");
+                setIsActive("Web Design");
+              }}
             >
               Web Design
             </button>
 
             <button
-              className="btn btn-outline-warning mx-2"
-              onClick={() => setTag("Javascript")}
+              className={`btn btn-outline-warning mx-2 ${
+                isActive === "Javascript" ? "active" : ""
+              }`}
+              onClick={() => {
+                setTag("Javascript");
+                setIsActive("Javascript");
+              }}
             >
               Javascript
             </button>
 
             <button
-              className="btn btn-outline-warning mx-2"
-              onClick={() => setTag("React Js")}
+              className={`btn btn-outline-warning mx-2 ${
+                isActive === "React Js" ? "active" : ""
+              }`}
+              onClick={() => {
+                setTag("React Js");
+                setIsActive("React Js");
+              }}
             >
               React Js
             </button>

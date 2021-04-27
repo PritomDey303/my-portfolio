@@ -4,7 +4,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { Col, Container, Image, Row } from "react-bootstrap";
 import TextTransition, { presets } from "react-text-transition";
 import { UserContext } from "../../../../App";
-
+import "./HomeHeader.css";
 AOS.init();
 export default function HomeHeader() {
   const [personalInfo] = useContext(UserContext);
@@ -20,7 +20,11 @@ export default function HomeHeader() {
     return () => clearTimeout(intervalId);
   }, []);
   return (
-    <div className="bg-brand pt-5" style={{ paddingBottom: "130px" }}>
+    <div
+      id="home-header"
+      className="bg-brand pt-5"
+      style={{ paddingBottom: "130px" }}
+    >
       <Container>
         <Row>
           <Col
@@ -30,8 +34,8 @@ export default function HomeHeader() {
             data-aos-duration="1500"
           >
             <div className="mx-auto text-brand">
-              <h1 className="display-4 text-brand">HI,I'M A WEB </h1>
-              <h1 className="display-1 text-brand ">
+              <h1 className="text-brand header-title1">HI,I'M A WEB</h1>
+              <h1 className="text-brand header-title2">
                 {" "}
                 <TextTransition
                   text={TEXTS[index % TEXTS.length]}
@@ -55,10 +59,7 @@ export default function HomeHeader() {
             data-aos="fade-left"
             data-aos-duration="1500"
           >
-            <div
-              className="image-container rounded-circle p-2 mx-auto bg-light"
-              style={{ width: "350px", height: "350px" }}
-            >
+            <div className="image-container header-img rounded-circle p-2 mx-auto bg-light">
               <Image src={img} className="w-100 h-100" roundedCircle />
             </div>
           </Col>

@@ -1,0 +1,22 @@
+.header-title1 {
+  font-size: 50px;
+}
+.header-title2 {
+  font-size: 70px;
+}
+.header-img {
+  width: 350px;
+  height: 350px;
+}
+@media only screen and (max-width: 600px) {
+  .header-title1 {
+    font-size: 30px;
+  }
+  .header-title2 {
+    font-size: 40px;
+  }
+  .header-img {
+    width: 300px;
+    height: 300px;
+  }
+}

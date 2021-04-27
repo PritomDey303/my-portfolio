@@ -2,7 +2,10 @@ const projects = [
   {
     _id: 1,
     name: "React Js",
-    link: "",
+    live_site: "",
+    github: "",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text.",
     img:
       "https://cdn.stylepark.com/manufacturers/h/hightex/produkte/ptfe-coated-glass-fabric-burj-al-arab/_930x620_crop_center-center_90_none/ptfe-coated-glass-fabric-burj-al-arab-1.jpg?mtime=20160907160806&focal=none&tmtime=20200620154441",
     category: "React Js",
@@ -10,7 +13,10 @@ const projects = [
   {
     _id: 2,
     name: "Web Design",
-    link: "",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text.",
+    live_site: "",
+    github: "",
     img:
       "https://cdn.stylepark.com/manufacturers/h/hightex/produkte/ptfe-coated-glass-fabric-burj-al-arab/_930x620_crop_center-center_90_none/ptfe-coated-glass-fabric-burj-al-arab-1.jpg?mtime=20160907160806&focal=none&tmtime=20200620154441",
     category: "Web Design",
@@ -18,7 +24,10 @@ const projects = [
   {
     _id: 3,
     name: "Javascript",
-    link: "",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text.",
+    live_site: "",
+    github: "",
     img:
       "https://cdn.stylepark.com/manufacturers/h/hightex/produkte/ptfe-coated-glass-fabric-burj-al-arab/_930x620_crop_center-center_90_none/ptfe-coated-glass-fabric-burj-al-arab-1.jpg?mtime=20160907160806&focal=none&tmtime=20200620154441",
     category: "Javascript",
@@ -26,7 +35,10 @@ const projects = [
   {
     _id: 4,
     name: "Javascript",
-    link: "",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text.",
+    live_site: "",
+    github: "",
     img:
       "https://cdn.stylepark.com/manufacturers/h/hightex/produkte/ptfe-coated-glass-fabric-burj-al-arab/_930x620_crop_center-center_90_none/ptfe-coated-glass-fabric-burj-al-arab-1.jpg?mtime=20160907160806&focal=none&tmtime=20200620154441",
     category: "Javascript",
