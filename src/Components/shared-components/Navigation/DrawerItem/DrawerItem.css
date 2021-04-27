@@ -4,6 +4,7 @@
 }
 .drawerLink:hover {
   color: tomato;
+  text-decoration: none;
 }
 .activeDrawerLink {
   color: tomato;

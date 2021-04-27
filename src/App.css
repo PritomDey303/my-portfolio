@@ -10,3 +10,8 @@ html {
 .bg-grey {
   background: rgb(237, 237, 237);
 }
+@media only screen and (max-width: 600px) {
+  .textCenter {
+    text-align: center;
+  }
+}

@@ -30,14 +30,15 @@ export default function HomeHeader() {
           <Col
             md={6}
             className="my-3 order-2 order-md-1"
-            data-aos="fade-right"
+            data-aos="fade-up"
             data-aos-duration="1500"
           >
-            <div className="mx-auto text-brand">
+            <div className="mx-auto text-brand header-info">
               <h1 className="text-brand header-title1">HI,I'M A WEB</h1>
               <h1 className="text-brand header-title2">
                 {" "}
                 <TextTransition
+                  className="mx-auto"
                   text={TEXTS[index % TEXTS.length]}
                   springConfig={presets.wobbly}
                 />
@@ -49,14 +50,17 @@ export default function HomeHeader() {
                 View My Works
               </button>
               <button className="btn btn-outline-secondary p-3">
-                Contact Me <ArrowDownwardRoundedIcon />
+                <a href="#contact" className="text-light">
+                  {" "}
+                  Contact Me <ArrowDownwardRoundedIcon />
+                </a>
               </button>
             </div>
           </Col>
           <Col
             md={6}
             className="my-3 order-1 order-md-2"
-            data-aos="fade-left"
+            data-aos="fade-down"
             data-aos-duration="1500"
           >
             <div className="image-container header-img rounded-circle p-2 mx-auto bg-light">

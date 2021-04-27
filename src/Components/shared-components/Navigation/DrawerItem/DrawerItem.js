@@ -1,3 +1,4 @@
+import { Divider } from "@material-ui/core";
 import Button from "@material-ui/core/Button";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
@@ -51,6 +52,26 @@ export default function DrawerItem() {
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
+      <List>
+        {["Home", "About", "Resume", "Projects", "Review", "Contact"].map(
+          (text, index) => (
+            <a className="drawerLink" href={`#${text.toLowerCase()}`}>
+              <ListItem button key={text}>
+                <ListItemIcon>
+                  {index % 2 !== 0 ? (
+                    <LockOpenRoundedIcon />
+                  ) : (
+                    <DashboardRoundedIcon />
+                  )}
+                </ListItemIcon>
+                <ListItemText primary={text} />
+              </ListItem>
+            </a>
+          )
+        )}
+      </List>
+      <Divider />
+
       <List>
         {["Dashboard", "Login"].map((text, index) => (
           <NavLink

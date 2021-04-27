@@ -9,7 +9,7 @@ export default function HomeAbout() {
   console.log(personalInfo);
   const { name, about, email, dob, city, country } = personalInfo;
   return (
-    <div className="pt-5 pb-5">
+    <div className="pt-5 pb-5" id="about">
       <Container>
         <Row data-aos="fade-up" data-aos-duration="1500">
           <Col className="text-center">
@@ -23,8 +23,8 @@ export default function HomeAbout() {
         <Row className="mt-5">
           <Col
             md={8}
-            className=" pl-1 pr-5"
-            data-aos="fade-right"
+            className="pr-5 textCenter"
+            data-aos="fade-up"
             data-aos-duration="1500"
           >
             <h2 className="my-2" style={{ fontWeight: "400" }}>
@@ -35,7 +35,7 @@ export default function HomeAbout() {
           <Col
             md={4}
             className="text-center"
-            data-aos="fade-left"
+            data-aos="fade-up"
             data-aos-duration="1500"
           >
             <div className="bg-brand rounded-circle circle mx-auto mb-3">
@@ -47,7 +47,7 @@ export default function HomeAbout() {
           </Col>
         </Row>
         <Row
-          className="text-brand mt-5"
+          className="text-brand mt-5 textCenter"
           data-aos="fade-up"
           data-aos-duration="1500"
         >

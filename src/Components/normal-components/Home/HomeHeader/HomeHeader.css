@@ -1,19 +1,24 @@
 .header-title1 {
-  font-size: 50px;
+  font-size: 40px;
 }
 .header-title2 {
-  font-size: 70px;
+  font-size: 80px;
+  font-weight: 200;
 }
 .header-img {
   width: 350px;
   height: 350px;
 }
 @media only screen and (max-width: 600px) {
+  .header-info {
+    margin-top: 30px;
+  }
   .header-title1 {
     font-size: 30px;
   }
   .header-title2 {
     font-size: 40px;
+    margin: 0 auto;
   }
   .header-img {
     width: 300px;

@@ -12,7 +12,7 @@ export default function HomeResume() {
   );
   console.log(Skills);
   return (
-    <div className="py-5">
+    <div className="py-5" id="resume">
       <Container>
         <Row data-aos="fade-up" data-aos-duration="1500">
           <Col>
@@ -30,7 +30,7 @@ export default function HomeResume() {
           <Col
             md={6}
             className="mb-2"
-            data-aos="fade-right"
+            data-aos="fade-up"
             data-aos-duration="1500"
           >
             <h2 className="mb-4"> My Education</h2>
@@ -47,7 +47,7 @@ export default function HomeResume() {
           <Col
             md={6}
             className="mb-2"
-            data-aos="fade-left"
+            data-aos="fade-up"
             data-aos-duration="1500"
           >
             <h2 className="mb-4">My Experience</h2>

@@ -17,7 +17,7 @@ export default function HomeProjects() {
   console.log(filteredProjects);
   const [isActive, setIsActive] = useState("All");
   return (
-    <div className="py-5">
+    <div className="py-5" id="projects">
       <Container>
         <Row data-aos="fade-up" data-aos-duration="1500">
           <Col>

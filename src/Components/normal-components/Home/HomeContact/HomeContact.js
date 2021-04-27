@@ -18,7 +18,7 @@ export default function HomeContact() {
     github,
   } = PersonalInfo;
   return (
-    <div className="bg-brand py-5">
+    <div className="bg-brand py-5 text-center" id="contact">
       <Container>
         <Row>
           <Col md={6} className="px-5 mb-5">
