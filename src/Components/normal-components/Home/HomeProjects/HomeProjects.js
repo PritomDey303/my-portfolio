@@ -47,14 +47,14 @@ export default function HomeProjects() {
 
             <button
               className={`btn btn-outline-warning mx-2 ${
-                isActive === "Web Design" ? "active" : ""
+                isActive === "HTML/CSS" ? "active" : ""
               }`}
               onClick={() => {
-                setTag("Web Design");
-                setIsActive("Web Design");
+                setTag("HTML/CSS");
+                setIsActive("HTML/CSS");
               }}
             >
-              Web Design
+              HTML/CSS
             </button>
 
             <button
@@ -79,6 +79,17 @@ export default function HomeProjects() {
               }}
             >
               React Js
+            </button>
+            <button
+              className={`btn btn-outline-warning mx-2 ${
+                isActive === "MERN" ? "active" : ""
+              }`}
+              onClick={() => {
+                setTag("MERN");
+                setIsActive("MERN");
+              }}
+            >
+              MERN
             </button>
           </Col>
         </Row>

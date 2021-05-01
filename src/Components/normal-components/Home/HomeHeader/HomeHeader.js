@@ -1,4 +1,5 @@
 import ArrowDownwardRoundedIcon from "@material-ui/icons/ArrowDownwardRounded";
+import CloudDownloadIcon from "@material-ui/icons/CloudDownload";
 import AOS from "aos";
 import React, { useContext, useEffect, useState } from "react";
 import { Col, Container, Image, Row } from "react-bootstrap";
@@ -46,15 +47,21 @@ export default function HomeHeader() {
               <h5 className="my-4 text-brand">
                 based in {city},{country}
               </h5>
-              <button className="btn btn-secondary mr-4 p-3">
-                View My Works
-              </button>
-              <button className="btn btn-outline-secondary p-3">
-                <a href="#contact" className="text-light">
-                  {" "}
+              <a
+                className="text-light"
+                target="_blank"
+                href="https://drive.google.com/file/d/1YEW0SS1pK7vmV8UIOJNAIDJqVa5aHh55/view?fbclid=IwAR2ngmxO4az_4SBsTyrRH2R00dhIaIIAgP0WleDmvvkeNE9J6ePm5OKWBBY"
+                rel="noreferrer"
+              >
+                <button className="btn btn-secondary mr-4 p-3">
+                  My Resume <CloudDownloadIcon />
+                </button>
+              </a>
+              <a href="#contact" className="text-dark">
+                <button className="btn btn-outline-secondary p-3">
                   Contact Me <ArrowDownwardRoundedIcon />
-                </a>
-              </button>
+                </button>
+              </a>
             </div>
           </Col>
           <Col

@@ -30,7 +30,7 @@ export default function SingleProject(props) {
             image={img}
             title="Contemplative Reptile"
           />
-          <CardContent>
+          <CardContent style={{ height: "200px" }}>
             <Typography gutterBottom variant="h5" component="h2">
               {name}
             </Typography>
@@ -40,14 +40,23 @@ export default function SingleProject(props) {
         <CardActions className="d-flex justify-content-between">
           <Button size="small">
             <GitHubIcon />{" "}
-            <a href={github} className="px-2 text-warning">
-              {" "}
+            <a
+              href={github}
+              target="_blank"
+              className="px-2 text-warning"
+              rel="noreferrer"
+            >
               Github Link
             </a>
           </Button>
           <Button size="small">
             <LiveTvIcon />{" "}
-            <a href={live_site} className="px-2 text-warning">
+            <a
+              href={live_site}
+              target="_blank"
+              className="px-2 text-warning"
+              rel="noreferrer"
+            >
               {" "}
               Live Site
             </a>

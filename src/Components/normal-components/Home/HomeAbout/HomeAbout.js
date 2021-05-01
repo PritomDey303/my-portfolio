@@ -40,7 +40,7 @@ export default function HomeAbout() {
           >
             <div className="bg-brand rounded-circle circle mx-auto mb-3">
               <h1 className="display-1 year text-secondary">
-                <b>22</b>
+                <b>2</b>
               </h1>
             </div>
             <h3>Years Of Experience</h3>
@@ -64,7 +64,7 @@ export default function HomeAbout() {
             <h6>{dob}</h6>
           </Col>
           <Col md={3} sm={6} xs={12}>
-            <p className="text-secondary">Form:</p>
+            <p className="text-secondary">From:</p>
             <h6>
               {city},{country}
             </h6>

@@ -10,8 +10,7 @@ const profession = [
   {
     _id: 2,
     title: "UX Design",
-    img:
-      "https://lh3.googleusercontent.com/proxy/DW8zBkHpKJSgH7MR9c4utXKK4AUA1IKqXKEt_dFJFMshxNZUVLPIbyZdoyXVwm-t03rniHxZ9FOQMLPpq0_kYEIf5dKYdBt6LzkpwcG9RDsVHEA",
+    img: "https://www.innovationm.com/images/concept-ux-design-icon-theme.png",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text.",
   },
@@ -19,7 +18,7 @@ const profession = [
     _id: 3,
     title: "Web Development",
     img:
-      "https://lh3.googleusercontent.com/proxy/j_TCEeNy_s8S5ffF9W12jM59GqU-3ywuXzrrLDqi2uxsXpK6qpYeGHwBlzdDXhOB6Xl6t5Y3OsPs4_uIpRNhugBre3HzzgPwAvg68F5sN7dg5XJl",
+      "https://i.pinimg.com/originals/44/f0/0d/44f00d6dc54c73e29bcc362c1bd5cd8a.png",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text.",
   },
