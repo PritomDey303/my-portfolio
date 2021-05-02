@@ -10,7 +10,6 @@ export default function HomeResume() {
   const [, , , , EducationInfo, , ExperienceInfo, , Skills] = useContext(
     UserContext
   );
-  console.log(Skills);
   return (
     <div className="py-5" id="resume">
       <Container>

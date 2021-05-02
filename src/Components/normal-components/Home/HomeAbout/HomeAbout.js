@@ -6,7 +6,6 @@ import "./HomeAbout.css";
 AOS.init();
 export default function HomeAbout() {
   const [personalInfo] = useContext(UserContext);
-  console.log(personalInfo);
   const { name, about, email, dob, city, country } = personalInfo;
   return (
     <div className="pt-5 pb-5" id="about">

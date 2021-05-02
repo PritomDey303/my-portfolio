@@ -5,6 +5,7 @@ import { Sugar } from "react-preloaders2";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
 import Home from "./Components/normal-components/Home/Home";
+import blogs from "./fakeData/blogs";
 import education from "./fakeData/education";
 import experience from "./fakeData/experience";
 import PersonalInfo from "./fakeData/PersonalInfo";
@@ -19,6 +20,8 @@ function App() {
   const [ExperienceInfo, setExperienceInfo] = useState([]);
   const [Skills, setSkills] = useState([]);
   const [Reviews, setReviews] = useState([]);
+  const [Blogs, setBlogs] = useState([]);
+
   //fetching personal info
   useEffect(() => {
     setPersonalInfo(PersonalInfo);
@@ -43,6 +46,11 @@ function App() {
   useEffect(() => {
     setReviews(reviews);
   }, []);
+  useEffect(() => {
+    setBlogs(blogs);
+  }, []);
+  //fetching blog info
+
   return (
     <div className="App">
       <UserContext.Provider
@@ -59,6 +67,8 @@ function App() {
           setSkills,
           Reviews,
           setReviews,
+          Blogs,
+          setBlogs,
         ]}
       >
         <Router>

@@ -52,10 +52,14 @@ export default function DrawerItem() {
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
-      <List>
+      <List className="navbar">
         {["Home", "About", "Resume", "Projects", "Review", "Contact"].map(
           (text, index) => (
-            <a className="drawerLink" href={`#${text.toLowerCase()}`}>
+            <a
+              className="drawerLink"
+              key={index}
+              href={`#${text.toLowerCase()}`}
+            >
               <ListItem button key={text}>
                 <ListItemIcon>
                   {index % 2 !== 0 ? (
@@ -75,6 +79,7 @@ export default function DrawerItem() {
       <List>
         {["Dashboard", "Login"].map((text, index) => (
           <NavLink
+            key={index}
             className="drawerLink"
             activeClassName="activeDrawerLink"
             exact

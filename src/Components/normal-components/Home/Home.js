@@ -2,6 +2,7 @@ import React from "react";
 import Footer from "../../shared-components/Footer/Footer";
 import Navigation from "../../shared-components/Navigation/Navigation";
 import HomeAbout from "./HomeAbout/HomeAbout";
+import HomeBlogs from "./HomeBlogs/HomeBlogs";
 import HomeContact from "./HomeContact/HomeContact";
 import HomeHeader from "./HomeHeader/HomeHeader";
 import HomeProfession from "./HomeProfession/HomeProfession";
@@ -18,6 +19,7 @@ export default function Home() {
       <HomeProfession />
       <HomeResume />
       <HomeProjects />
+      <HomeBlogs />
       <SimpleBanner title="Interested working with me?" />
       <HomeReview />
       <HomeContact />

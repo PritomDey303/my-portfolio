@@ -28,3 +28,19 @@
     height: 300px;
   }
 }
+@media only screen and (max-width: 400px) {
+  .header-info {
+    margin-top: 30px;
+  }
+  .header-title1 {
+    font-size: 25px;
+  }
+  .header-title2 {
+    font-size: 35px;
+    margin: 0 auto;
+  }
+  .header-img {
+    width: 250px;
+    height: 250px;
+  }
+}

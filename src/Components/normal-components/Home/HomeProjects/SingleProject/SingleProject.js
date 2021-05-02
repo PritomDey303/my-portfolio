@@ -24,7 +24,7 @@ export default function SingleProject(props) {
       data-aos="fade-up"
       data-aos-duration="1200"
     >
-      <Card className="w-100 h-100 shadow">
+      <Card className="w-100 h-100 shadow card">
         <CardActionArea>
           <CardMedia
             style={{ width: "100%", height: "250px" }}

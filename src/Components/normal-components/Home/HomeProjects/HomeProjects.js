@@ -14,7 +14,6 @@ export default function HomeProjects() {
           projects.filter((project) => project.category === tag)
         );
   }, [tag]);
-  console.log(filteredProjects);
   const [isActive, setIsActive] = useState("All");
   return (
     <div className="py-5" id="projects">

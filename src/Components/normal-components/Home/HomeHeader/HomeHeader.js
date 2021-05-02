@@ -52,12 +52,12 @@ export default function HomeHeader() {
                 href="https://drive.google.com/uc?export=download&id=1YEW0SS1pK7vmV8UIOJNAIDJqVa5aHh55"
                 rel="noreferrer"
               >
-                <button className="btn btn-secondary mr-4 p-3">
+                <button className="btn btn-secondary mr-4 p-3 mb-3">
                   My Resume <CloudDownloadIcon />
                 </button>
               </a>
               <a href="#contact" className="text-dark">
-                <button className="btn btn-outline-secondary p-3">
+                <button className="btn btn-outline-secondary p-3 mb-3">
                   Contact Me <ArrowDownwardRoundedIcon />
                 </button>
               </a>

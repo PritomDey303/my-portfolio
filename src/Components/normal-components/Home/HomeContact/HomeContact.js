@@ -60,19 +60,19 @@ export default function HomeContact() {
             data-aos-duration="1500"
           >
             <h2 className="mb-5 mt-3">Estimate your project?</h2>
-            <form action="" class="contact-form">
-              <div class="form-group">
-                <label for="name">What is Your Name:</label>
-                <input type="text" class="form-control form-control-lg" />
+            <form action="" className="contact-form">
+              <div className="form-group">
+                <label>What is Your Name:</label>
+                <input type="text" className="form-control form-control-lg" />
               </div>
-              <div class="form-group">
-                <label for="name">Your Email Address:</label>
-                <input type="email" class="form-control form-control-lg" />
+              <div className="form-group">
+                <label>Your Email Address:</label>
+                <input type="email" className="form-control form-control-lg" />
               </div>
-              <div class="form-group">
-                <label for="name">How can I Help you?:</label>
+              <div className="form-group">
+                <label>How can I Help you?:</label>
                 <textarea
-                  class="form-control form-control-lg"
+                  className="form-control form-control-lg"
                   rows="3"
                 ></textarea>
               </div>
