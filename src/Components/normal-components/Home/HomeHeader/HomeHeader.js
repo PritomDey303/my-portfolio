@@ -49,8 +49,7 @@ export default function HomeHeader() {
               </h5>
               <a
                 className="text-light"
-                target="_blank"
-                href="https://drive.google.com/file/d/1YEW0SS1pK7vmV8UIOJNAIDJqVa5aHh55/view?fbclid=IwAR2ngmxO4az_4SBsTyrRH2R00dhIaIIAgP0WleDmvvkeNE9J6ePm5OKWBBY"
+                href="https://drive.google.com/uc?export=download&id=1YEW0SS1pK7vmV8UIOJNAIDJqVa5aHh55"
                 rel="noreferrer"
               >
                 <button className="btn btn-secondary mr-4 p-3">

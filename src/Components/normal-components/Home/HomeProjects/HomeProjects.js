@@ -31,68 +31,70 @@ export default function HomeProjects() {
             </Col>
           </Col>
         </Row>
-        <Row className="my-4" data-aos="fade-up" data-aos-duration="1500">
-          <Col className="d-flex justify-content-center">
-            <button
-              className={`btn btn-outline-warning mx-2 ${
-                isActive === "All" ? "active" : ""
-              }`}
-              onClick={() => {
-                setTag("all");
-                setIsActive("All");
-              }}
-            >
-              All
-            </button>
+        <div
+          className="my-4 d-flex flex-wrap justify-content-center"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+        >
+          <button
+            className={`btn btn-outline-warning mb-3 mx-2 ${
+              isActive === "All" ? "active" : ""
+            }`}
+            onClick={() => {
+              setTag("all");
+              setIsActive("All");
+            }}
+          >
+            All
+          </button>
 
-            <button
-              className={`btn btn-outline-warning mx-2 ${
-                isActive === "HTML/CSS" ? "active" : ""
-              }`}
-              onClick={() => {
-                setTag("HTML/CSS");
-                setIsActive("HTML/CSS");
-              }}
-            >
-              HTML/CSS
-            </button>
+          <button
+            className={`btn btn-outline-warning mb-3 mx-2 ${
+              isActive === "HTML/CSS" ? "active" : ""
+            }`}
+            onClick={() => {
+              setTag("HTML/CSS");
+              setIsActive("HTML/CSS");
+            }}
+          >
+            HTML/CSS
+          </button>
 
-            <button
-              className={`btn btn-outline-warning mx-2 ${
-                isActive === "Javascript" ? "active" : ""
-              }`}
-              onClick={() => {
-                setTag("Javascript");
-                setIsActive("Javascript");
-              }}
-            >
-              Javascript
-            </button>
+          <button
+            className={`btn btn-outline-warning mb-3 mx-2 ${
+              isActive === "Javascript" ? "active" : ""
+            }`}
+            onClick={() => {
+              setTag("Javascript");
+              setIsActive("Javascript");
+            }}
+          >
+            Javascript
+          </button>
 
-            <button
-              className={`btn btn-outline-warning mx-2 ${
-                isActive === "React Js" ? "active" : ""
-              }`}
-              onClick={() => {
-                setTag("React Js");
-                setIsActive("React Js");
-              }}
-            >
-              React Js
-            </button>
-            <button
-              className={`btn btn-outline-warning mx-2 ${
-                isActive === "MERN" ? "active" : ""
-              }`}
-              onClick={() => {
-                setTag("MERN");
-                setIsActive("MERN");
-              }}
-            >
-              MERN
-            </button>
-          </Col>
-        </Row>
+          <button
+            className={`btn btn-outline-warning mb-3 mx-2 ${
+              isActive === "React Js" ? "active" : ""
+            }`}
+            onClick={() => {
+              setTag("React Js");
+              setIsActive("React Js");
+            }}
+          >
+            React Js
+          </button>
+          <button
+            className={`btn btn-outline-warning mb-3 mx-2 ${
+              isActive === "MERN" ? "active" : ""
+            }`}
+            onClick={() => {
+              setTag("MERN");
+              setIsActive("MERN");
+            }}
+          >
+            MERN
+          </button>
+        </div>
         <Row>
           {filteredProjects.map((project) => (
             <SingleProject key={project._id} project={project}></SingleProject>

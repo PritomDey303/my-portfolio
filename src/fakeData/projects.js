@@ -69,5 +69,25 @@ const projects = [
     img: "https://i.ibb.co/3hh53H9/Screenshot-6.png",
     category: "Javascript",
   },
+  {
+    _id: 8,
+    name: "English Premier Legue",
+    description:
+      "This simple react site is based on English Premier Legue teams.Here you can see a list of all teams in EPL. And You can get details about each team by clicking respective Explore button. ",
+    live_site: " https://epl303.netlify.app",
+    github: "https://github.com/PritomDey303/English-Premier-Legue",
+    img: "https://i.ibb.co/R43nGPK/Screenshot-7.png",
+    category: "React Js",
+  },
+  {
+    _id: 9,
+    name: "MIZUXE",
+    description:
+      "MIZUXE is a html template. HTML,CSS and Bootstrap is used to build it. ",
+    live_site: "https://pritomdey303.github.io/Mizuxe/",
+    github: "https://github.com/PritomDey303/Mizuxe",
+    img: "https://i.ibb.co/mSx19TH/Screenshot-8.png",
+    category: "HTML/CSS",
+  },
 ];
 export default projects;

@@ -18,7 +18,8 @@ export default function SingleProject(props) {
   const { img, name, github, live_site, description } = props.project;
   return (
     <Col
-      md={4}
+      md={6}
+      xl={4}
       className="my-4 project py-2"
       data-aos="fade-up"
       data-aos-duration="1200"
@@ -39,7 +40,7 @@ export default function SingleProject(props) {
         </CardActionArea>
         <CardActions className="d-flex justify-content-between">
           <Button size="small">
-            <GitHubIcon />{" "}
+            <GitHubIcon />
             <a
               href={github}
               target="_blank"

@@ -1,6 +1,7 @@
 import "aos/dist/aos.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { createContext, useEffect, useState } from "react";
+import { Sugar } from "react-preloaders2";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
 import Home from "./Components/normal-components/Home/Home";
@@ -67,7 +68,8 @@ function App() {
             </Route>
           </Switch>
         </Router>
-      </UserContext.Provider>
+      </UserContext.Provider>{" "}
+      <Sugar background={"#f5df4e"} color={"#DC143C"} />
     </div>
   );
 }

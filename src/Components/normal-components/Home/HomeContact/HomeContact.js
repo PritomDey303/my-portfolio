@@ -2,10 +2,12 @@ import { GitHub } from "@material-ui/icons";
 import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import AOS from "aos";
 import React, { useContext } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { UserContext } from "../../../../App";
 import "./HomeContact.css";
+AOS.init();
 export default function HomeContact() {
   const [PersonalInfo] = useContext(UserContext);
   const {
@@ -21,7 +23,12 @@ export default function HomeContact() {
     <div className="bg-brand py-5 text-center" id="contact">
       <Container>
         <Row>
-          <Col md={6} className="px-5 mb-5">
+          <Col
+            md={6}
+            className="px-5 mb-5"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
             <h2 className="mb-5 mt-3">Let's get in touch</h2>
             <p className="mb-5">
               I enjoy discussing new projects and design challenges.Please share
@@ -46,7 +53,12 @@ export default function HomeContact() {
               </a>
             </div>
           </Col>
-          <Col md={6} className="px-5">
+          <Col
+            md={6}
+            className="px-5"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
             <h2 className="mb-5 mt-3">Estimate your project?</h2>
             <form action="" class="contact-form">
               <div class="form-group">
