@@ -6,7 +6,7 @@ import SingleProfession from "./SingleProfession/SingleProfession";
 export default function HomeProfession() {
   const [, , professionInfo] = useContext(UserContext);
   return (
-    <div className="py-5 bg-grey">
+    <section className="py-5 bg-grey" id="profession">
       <Container>
         <Row data-aos="fade-up" data-aos-duration="1500">
           <Col>
@@ -30,6 +30,6 @@ export default function HomeProfession() {
           ))}
         </Row>
       </Container>
-    </div>
+    </section>
   );
 }

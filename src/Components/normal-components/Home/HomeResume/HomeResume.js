@@ -11,7 +11,7 @@ export default function HomeResume() {
     UserContext
   );
   return (
-    <div className="py-5" id="resume">
+    <section className="py-5" id="resume">
       <Container>
         <Row data-aos="fade-up" data-aos-duration="1500">
           <Col>
@@ -27,7 +27,7 @@ export default function HomeResume() {
         </Row>
         <Row className="py-5 mt-4">
           <Col
-            md={6}
+            md={12}
             className="mb-2"
             data-aos="fade-up"
             data-aos-duration="1500"
@@ -45,7 +45,7 @@ export default function HomeResume() {
 
           <Col
             md={6}
-            className="mb-2"
+            className="mb-2 d-none"
             data-aos="fade-up"
             data-aos-duration="1500"
           >
@@ -72,6 +72,6 @@ export default function HomeResume() {
           </Row>
         </Container>
       </div>
-    </div>
+    </section>
   );
 }

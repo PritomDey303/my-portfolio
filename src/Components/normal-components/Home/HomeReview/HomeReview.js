@@ -17,7 +17,7 @@ export default function HomeReview() {
     slidesToScroll: 1,
   };
   return (
-    <div className="py-5 bg-secondary text-light">
+    <div id="review" className="py-5 bg-secondary text-light">
       <Container>
         <Row data-aos="fade-up" data-aos-duration="1500">
           <Col>

@@ -23,6 +23,7 @@ const useStyles = makeStyles({
 });
 
 export default function DrawerItem() {
+  console.log(document.getElementById("navbar"));
   const classes = useStyles();
   const [state, setState] = React.useState({
     top: false,
@@ -52,27 +53,35 @@ export default function DrawerItem() {
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
-      <List className="navbar">
-        {["Home", "About", "Resume", "Projects", "Review", "Contact"].map(
-          (text, index) => (
-            <a
-              className="drawerLink"
-              key={index}
-              href={`#${text.toLowerCase()}`}
-            >
-              <ListItem button key={text}>
-                <ListItemIcon>
-                  {index % 2 !== 0 ? (
-                    <LockOpenRoundedIcon />
-                  ) : (
-                    <DashboardRoundedIcon />
-                  )}
-                </ListItemIcon>
-                <ListItemText primary={text} />
-              </ListItem>
-            </a>
-          )
-        )}
+      <List className="navbar" id="navbar">
+        {[
+          "Home",
+          "About",
+          "Profession",
+          "Resume",
+          "Projects",
+          "Blogs",
+          "Review",
+          "Contact",
+        ].map((text, index) => (
+          <a
+            className="drawerLink"
+            id={text}
+            key={index}
+            href={`#${text.toLowerCase()}`}
+          >
+            <ListItem button key={text}>
+              <ListItemIcon>
+                {index % 2 !== 0 ? (
+                  <LockOpenRoundedIcon />
+                ) : (
+                  <DashboardRoundedIcon />
+                )}
+              </ListItemIcon>
+              <ListItemText primary={text} />
+            </ListItem>
+          </a>
+        ))}
       </List>
       <Divider />
 

@@ -20,7 +20,7 @@ export default function HomeContact() {
     github,
   } = PersonalInfo;
   return (
-    <div className="bg-brand py-5 text-center" id="contact">
+    <section className="bg-brand py-5 text-center" id="contact">
       <Container>
         <Row>
           <Col
@@ -83,6 +83,6 @@ export default function HomeContact() {
           </Col>
         </Row>
       </Container>
-    </div>
+    </section>
   );
 }

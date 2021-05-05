@@ -16,7 +16,7 @@ export default function HomeProjects() {
   }, [tag]);
   const [isActive, setIsActive] = useState("All");
   return (
-    <div className="py-5" id="projects">
+    <section className="py-5" id="projects">
       <Container>
         <Row data-aos="fade-up" data-aos-duration="1500">
           <Col>
@@ -100,6 +100,6 @@ export default function HomeProjects() {
           ))}
         </Row>
       </Container>
-    </div>
+    </section>
   );
 }

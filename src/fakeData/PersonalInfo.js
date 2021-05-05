@@ -10,8 +10,8 @@ const PersonalInfo = {
     "I'm a designer & developer with a passion for web design.I enjoy developing simple,clean and slick websites that provides real value to the end user.Thousands of clients have procured exceptional result while working with me.Delivering work within time and budget which meets client's requirements is my moto",
   mobile: "+8801882787668",
   facebook: "https://www.facebook.com/pritom.dey.520",
-  linkdin: "",
-  github: "",
+  linkdin: "https://www.linkedin.com/in/pritom-dey-5b9111211/",
+  github: "https://github.com/PritomDey303/",
   img: "https://i.ibb.co/vcTXTTk/pritom.jpg",
 };
 

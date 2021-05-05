@@ -21,8 +21,8 @@ export default function HomeHeader() {
     return () => clearTimeout(intervalId);
   }, []);
   return (
-    <div
-      id="home-header"
+    <section
+      id="home"
       className="bg-brand pt-5"
       style={{ paddingBottom: "130px" }}
     >
@@ -75,6 +75,6 @@ export default function HomeHeader() {
           </Col>
         </Row>
       </Container>
-    </div>
+    </section>
   );
 }

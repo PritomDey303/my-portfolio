@@ -7,7 +7,7 @@ AOS.init();
 export default function HomeBlogs() {
   const [, , , , , , , , , , , , Blogs] = useContext(UserContext);
   return (
-    <div className="py-5 bg-grey" id="projects">
+    <section className="py-5 bg-grey" id="blogs">
       <Container>
         <Row data-aos="fade-up" data-aos-duration="1500">
           <Col>
@@ -27,6 +27,6 @@ export default function HomeBlogs() {
           ))}
         </Row>
       </Container>
-    </div>
+    </section>
   );
 }

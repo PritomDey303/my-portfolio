@@ -8,7 +8,7 @@ export default function HomeAbout() {
   const [personalInfo] = useContext(UserContext);
   const { name, about, email, dob, city, country } = personalInfo;
   return (
-    <div className="pt-5 pb-5" id="about">
+    <section className="pt-5 pb-5" id="about">
       <Container>
         <Row data-aos="fade-up" data-aos-duration="1500">
           <Col className="text-center">
@@ -70,6 +70,6 @@ export default function HomeAbout() {
           </Col>
         </Row>
       </Container>
-    </div>
+    </section>
   );
 }
